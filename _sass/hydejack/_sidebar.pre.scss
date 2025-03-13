@@ -27,7 +27,7 @@ hy-drawer {
     --hy-drawer-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
     // >>>
   }
-
+  
   @media screen and (min-width: $break-point-3) {
     // <<< inline
     position: fixed;
@@ -145,14 +145,14 @@ hy-drawer.loaded .sidebar {
   // max-width: $sidebar-width;
   padding: 1.5rem;
   contain: content;
-  width: 200px; /* Default width for small screens */
+  width: 300px; /* Default width for small screens */
 
-  @media (min-width: 1000px) {
-    width: 200px; /* Tablets and medium screens */
+  @media (min-width: 1200px) {
+    width: 350px; /* Desktops and medium screens */
   }
 
   @media (min-width: 2000px) {
-    width: 350px; /* Desktops and larger screens */
+    width: 450px; /* larger screens */
   }
 }
 
