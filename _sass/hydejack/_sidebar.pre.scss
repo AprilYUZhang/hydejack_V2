@@ -146,7 +146,7 @@ hy-drawer.loaded .sidebar {
   padding: 1.5rem;
   contain: content;
   width: $sidebar-width; /* Default width for small screens */
-  @media (min-width: 1600px) {
+  @media (min-width: 1800px) {
     width: 25vw;
   }
 }
