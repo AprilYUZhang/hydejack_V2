@@ -1,1 +1,12 @@
 // This is deprecated. Modify CSS Custom Properties instead.
+:root {
+    --sidebar-width: 200px; // Default width for small screens
+  
+    @media (min-width: 768px) {
+      --sidebar-width: 300px; // Medium screens (tablets)
+    }
+  
+    @media (min-width: 1200px) {
+      --sidebar-width: 400px; // Large screens (desktops)
+    }
+  }
