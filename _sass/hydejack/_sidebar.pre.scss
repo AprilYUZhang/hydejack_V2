@@ -19,14 +19,10 @@ hy-drawer {
   overflow: hidden; // inline
   display: block; // inline
   z-index: 4; // inline
-
-  @media screen {
-    // <<< link
-    --hy-drawer-width: 100%;
-    --hy-drawer-peek-width: .5rem;
-    --hy-drawer-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
-    // >>>
-  }
+  
+  --hy-drawer-width: 100%;
+  --hy-drawer-peek-width: .5rem;
+  --hy-drawer-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
 
   @media (max-width: 768px) {
     hy-drawer {
@@ -36,7 +32,7 @@ hy-drawer {
   
   @media (min-width: 1200px) {
     hy-drawer {
-      --hy-drawer-width: 400px; /* Larger screens */
+      --hy-drawer-width: 350px; /* Larger screens */
     }
   }
   @media screen and (min-width: $break-point-3) {
