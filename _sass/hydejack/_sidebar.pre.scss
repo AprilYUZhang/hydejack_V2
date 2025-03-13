@@ -24,17 +24,17 @@ hy-drawer {
   --hy-drawer-peek-width: .5rem;
   --hy-drawer-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
 
-  @media (max-width: 768px) {
-    hy-drawer {
-      --hy-drawer-width: 200px; /* Smaller screens */
-    }
-  }
+  // @media (max-width: 768px) {
+  //   hy-drawer {
+  //     --hy-drawer-width: 200px; /* Smaller screens */
+  //   }
+  // }
   
-  @media (min-width: 1200px) {
-    hy-drawer {
-      --hy-drawer-width: 350px; /* Larger screens */
-    }
-  }
+  // @media (min-width: 1200px) {
+  //   hy-drawer {
+  //     --hy-drawer-width: 350px; /* Larger screens */
+  //   }
+  // }
   @media screen and (min-width: $break-point-3) {
     // <<< inline
     position: fixed;
