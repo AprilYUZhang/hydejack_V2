@@ -83,15 +83,6 @@ hy-drawer {
   min-height: 100vh;
   &.invert { color: rgba(32, 32, 32, .75) }
   // >>>
-  width: 200px; /* Default width for small screens */
-
-  @media (min-width: 768px) {
-    width: 200px; /* Tablets and medium screens */
-  }
-
-  @media (min-width: 1200px) {
-    width: 350px; /* Desktops and larger screens */
-  }
   a {
     // <<< inline
     color: #fff; 
@@ -158,9 +149,18 @@ hy-drawer.loaded .sidebar {
 .sidebar-sticky {
   position: relative;
   z-index: 3;
-  max-width: $sidebar-width;
+  // max-width: $sidebar-width;
   padding: 1.5rem;
   contain: content;
+  width: 200px; /* Default width for small screens */
+
+  @media (min-width: 768px) {
+    width: 200px; /* Tablets and medium screens */
+  }
+
+  @media (min-width: 1200px) {
+    width: 350px; /* Desktops and larger screens */
+  }
 }
 
 .sidebar-about {
