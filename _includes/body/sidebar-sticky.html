@@ -6,8 +6,13 @@
       </a>
     {% endif %}
     <a class="sidebar-title" href="{{ '/' | relative_url }}">
-      <img src="{% include_cached smart-url url= site.titlelogo %}" alt="Site Title Image" class="sidebar-logo" alt="EUCARPIA 2025 Conference" style="width: var(--sidebar-width);">
-  </a>
+      <picture>
+        <source media="(min-width: 768px)" srcset="{% include_cached smart-url url= site.titlelogo %}" style="width: 200px;">
+        <img src="{% include_cached smart-url url= site.titlelogo %}"
+            alt="EUCARPIA 2025 Conference"
+            class="sidebar-logo"
+            style="width: 100px;">
+      </picture>  </a>
     <!-- <a class="sidebar-title" href="{{ '/' | relative_url }}"><h2 class="h1">{{ site.short_title | default:site.title }}</h2></a> -->
     {% assign text = site.tagline | default:site.description %}
     {% if text %}
