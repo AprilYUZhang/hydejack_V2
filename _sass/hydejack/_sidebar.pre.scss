@@ -145,15 +145,7 @@ hy-drawer.loaded .sidebar {
   // max-width: $sidebar-width;
   padding: 1.5rem;
   contain: content;
-  width: 300px; /* Default width for small screens */
-
-  @media (min-width: 1200px) {
-    width: 350px; /* Desktops and medium screens */
-  }
-
-  @media (min-width: 2000px) {
-    width: 600px; /* larger screens */
-  }
+  width: 40vw; /* Default width for small screens */
 }
 
 .sidebar-about {
